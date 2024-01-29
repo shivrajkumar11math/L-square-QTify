@@ -4,7 +4,7 @@ import { CircularProgress } from "@mui/material";
 import Card from "../Card/Card";
 
 const Section = ({ data, title, type }) => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   const handleToggle = () => {
     setToggle(!toggle);
   };
