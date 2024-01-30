@@ -5,7 +5,7 @@ import Card from "../Card/Card";
 import Carousel from "../Carousel/Carousel";
 
 const Section = ({ data, title, type }) => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   const handleToggle = () => {
     setToggle(!toggle);
   };
