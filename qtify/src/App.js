@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import { fetchTopAlbum, fetchNewAlbum } from "./api/api";
 import Section from "./components/Section/Section";
+import styles from "./App.module.css";
 
 function App() {
   const [topAlbumsData, setTopAlbumsData] = useState([]);
@@ -35,8 +36,10 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <Section data={topAlbumsData} title="Top Albums" type="album" />
-      <Section data={newAlbumsData} title="New Albums" type="album" />
+      <div className={styles.sectionWrapper}>
+        <Section data={topAlbumsData} title="Top Albums" type="album" />
+        <Section data={newAlbumsData} title="New Albums" type="album" />
+      </div>
     </div>
   );
 }
