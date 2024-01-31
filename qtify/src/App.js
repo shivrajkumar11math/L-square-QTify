@@ -40,15 +40,15 @@ function App() {
       const res = await fetchSongs();
       setSongsData(res);
       setFilteredDataValues(res);
-      console.log("Total Songs : ", res.length);
-      console.log(res);
+      // console.log("Total Songs : ", res.length);
+      // console.log(res);
     } catch (error) {
       console.error(error);
     }
   };
 
   useEffect(() => {
-    console.log("UseEffect called.");
+    // console.log("UseEffect called.");
     const fetchData = async () => {
       await generateTopAlbums();
       await generateNewAlbums();
@@ -96,10 +96,11 @@ function App() {
   useEffect(() => {
     // console.log(value);
     generateSongsData();
+    // eslint-disable-next-line
   }, [value]);
 
 
-  console.log("Component Rendered.");
+  // console.log("Component Rendered.");
   return (
     <div>
       <Navbar />

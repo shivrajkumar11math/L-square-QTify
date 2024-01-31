@@ -15,7 +15,7 @@ const Section = ({
   value = 0,
   handleChange = null,
 }) => {
-  console.log("filteredDataValues inside Section : ", filteredDataValues);
+  // console.log("filteredDataValues inside Section : ", filteredDataValues);
   const [toggle, setToggle] = useState(true);
   const handleToggle = () => {
     setToggle(!toggle);
